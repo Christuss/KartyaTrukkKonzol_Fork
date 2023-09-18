@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package kartyatrukkkonzolon;
 
-/**
- *
- * @author szendefi.k.daniel
- */
+
 public class Pakli {
+
+    public Pakli() {
+    }
     
+    public void feltolt() {
+        
+    }
+    public void kirak() {
+        
+    }
+    public void kever() {
+        
+    }
+    public void ezVolt() {
+        
+    }
 }
