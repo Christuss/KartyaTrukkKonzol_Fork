@@ -4,10 +4,10 @@ package kartyatrukkkonzolon;
 
 public class Pakli {
 
-    private String[] pakli;
+    private Lap[] pakli;
 
     public Pakli() {
-        
+        pakli = new Lap[22];
     }
     
     public void feltolt() {
@@ -16,21 +16,21 @@ public class Pakli {
         int i = 1;
         for (String szin : szinek) {
             for (int e = 0; e < ertekek.length && i < pakli.length; e++) {
-                this.pakli[i++] = szin + "_" + ertekek[e];
+                this.pakli[i++] = new Lap(szin + "_" + ertekek[e]);
             }
         }
     }
     
     public void kirak() {
         for (int i = 1; i < pakli.length; i++) {
-            System.out.printf("%-8s", pakli[i]);
+            System.out.printf("%-8s", pakli[i].getLeiras());
             if (i % 3 == 0) {
                 System.out.println("");
             }
         }
     }
     public void kever(int oszlop) {
-        String[] ujPakli = new String[22];
+        Lap[] ujPakli = new Lap[22];
         switch (oszlop) {
             case 1:
                 for (int i = 1; i <= 7; i++) {
@@ -57,6 +57,6 @@ public class Pakli {
         pakli = ujPakli;
     }
     public void ezVolt() {
-        System.out.println("A választott lap: " + pakli[11]);
+        System.out.println("A választott lap: " + pakli[11].getLeiras());
     }
 }
