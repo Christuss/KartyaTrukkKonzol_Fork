@@ -1,6 +1,8 @@
-package kartyatrukkkonzolon;
+package main;
 
-public class KartyaTrukkKonzolon {
+import nezet.Kartyatrukk;
+
+public class Program {
 
     public static void main(String[] args) {
         new Kartyatrukk();

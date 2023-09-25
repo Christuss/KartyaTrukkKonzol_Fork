@@ -1,7 +1,8 @@
 
-package kartyatrukkkonzolon;
+package nezet;
 
 import java.util.Scanner;
+import modell.Pakli;
 
 public class Kartyatrukk {
     private Scanner sc = new Scanner(System.in);
@@ -18,11 +19,11 @@ public class Kartyatrukk {
         palki = new Pakli();
         this.palki.feltolt();
         for (int i = 0; i < 3; i++) {
-            this.palki.kirak();
+            System.out.println(this.palki.kirak());
             int oszlop = melyik();
             this.palki.kever(oszlop);
         }
-        this.palki.ezVolt();
+        System.out.println(this.palki.ezVolt());
     }
     public int melyik() {
         boolean jo;
